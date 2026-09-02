@@ -4,8 +4,6 @@ dns.setServers(["8.8.8.8"]);
 if(process.env.NODE_ENV !="production"){
     require('dotenv').config();
 }
-console.log(process.env.SECRET);
-
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
