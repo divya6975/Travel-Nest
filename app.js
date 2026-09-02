@@ -103,18 +103,3 @@ app.listen(8090, ()=>{
     console.log("server is listning at port");
 });
 
-
-
-//just to save data in db
-/*app.get("/testlisting", async(req,res)=>{
-    let sampleListing = new Listing({
-        title: "MY New Villa",
-        description:"By the beach",
-        price:1200,
-        location:"Calangute, Goa",
-        country: "India",
-    });
-     await sampleListing.save();
-     console.log("sample was saved");
-     res.send("succesful testing");
-});*/
