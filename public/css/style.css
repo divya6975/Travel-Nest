@@ -107,12 +107,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 2rem;
   }
 .filter{
     text-align: center;
-    margin-right: 2rem;
-    margin-top: 2rem;
     opacity: 0.7;
+    flex: 0 0 auto;
+    text-decoration: none;
+    color: inherit;
   }
 .filter:hover{
     opacity: 1;
@@ -150,4 +154,55 @@ body {
      border-radius: 20px !important;
      padding: 0.5rem 3rem 0.5rem 3rem !important;
      
+}
+@media(max-width:768px){
+    .navbar{
+        height: auto;
+        padding: 0.7rem 1rem;
+    }
+    .navbar-nav{
+        align-items: flex-start;
+    }
+    .nav-link{
+        margin-left: 0;
+        margin-top: 0.5rem 0;
+    }
+    .search-form{
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    .search-input{
+        width: 70%;
+    }
+    .btn-search{
+        width: 30%;
+    }
+    #filters{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.2rem;
+        margin-top: 1.5rem;
+    }
+    .filter{
+        margin: 0;
+        flex: 0 0 auto;
+    }
+    .tax-toggle{
+        margin: 1rem auto;
+        width: fit-content;
+
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .listing-card{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .listing-card img{
+        width: 100%;
+        height: auto;
+    }
 }

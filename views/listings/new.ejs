@@ -38,6 +38,22 @@
             <input name="listing[location]" type="text" placeholder="enter the location" class="form-control" required>
             <div class="invalid-feedback"> please enter valid location!</div>
         </div>
+        <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+            <select name="listing[category]" id="category" class="form-select" required>
+             <option value="">Select a category</option>
+             <option value="Trending">Trending</option>
+             <option value="Rooms">Rooms</option>
+             <option value="Iconic city">Iconic City</option>
+             <option value="Mountains">Mountains</option>
+             <option value="Castle">Castle</option>
+             <option value="Amazing Pool">Amazing Pool</option>
+             <option value="Camping">Camping</option>
+             <option value="Farms">Farms</option>
+             <option value="Arctic">Arctic</option>
+             <option value="Domes">Domes</option>
+            </select>
+        </div>
         <br><br>
         <button class="btn btn-dark add-btn">Add</button>
     </form>
