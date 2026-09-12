@@ -125,7 +125,6 @@ body {
 .filter p{
     font-size:0.8rem;
   }
-
 .tax-info{
     display:none;
 }
@@ -138,7 +137,6 @@ body {
     display: flex;
     align-items: center;
 }
-
 .btn-search{
     background-color: #fe424d !important;
     color: #fff !important;
@@ -158,10 +156,25 @@ body {
 @media(max-width:768px){
     .navbar{
         height: auto;
-        padding: 0.7rem 1rem;
+        min-height: 5rem;
+        padding: 0.5rem 0;
+    }
+    .navbar.container-fluid{
+        flex-wrap: wrap;
+    }
+    .navbar-collapse{
+        width: 100%;
+        align-items: flex-start;
     }
     .navbar-nav{
+        width: 100%;
         align-items: flex-start;
+    }
+    .navbar-nav .nav-link {
+        padding: 0.6rem 0;
+    }
+    .navbar-nav.ms-auto {
+        margin-left: 0 !important;
     }
     .nav-link{
         margin-left: 0;
@@ -178,20 +191,34 @@ body {
         width: 30%;
     }
     #filters{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.2rem;
-        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0,1fr));
+        gap: 1 rem 0.5rem;
+        margin: 1rem;
     }
     .filter{
-        margin: 0;
-        flex: 0 0 auto;
+        min-width: 0;
+        width: 100%;
+        flex: none;
+        font-size: 0.8rem;
+        overflow-wrap: anywhere;
+    }
+    .filter p{
+        font-size: 0.75rem;
     }
     .tax-toggle{
-        margin: 1rem auto;
-        width: fit-content;
-
+       width: fit-content;
+       max-width: 100%;
+       height: auto;
+       margin: 1rem auto;
+       padding: 0.75rem 1rem;
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+       gap: 0.5rem;
+       text-align: center;
+       font-size: 0.85rem;
     }
     .row{
         margin-left: 0;
